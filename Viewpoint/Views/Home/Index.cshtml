@@ -1,0 +1,39 @@
+﻿
+@if (ViewData["result"] != null || !string.IsNullOrWhiteSpace((string)ViewData["result"]))
+{
+    <p>
+        <strong>@ViewData["result"]</strong>
+    </p>
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <form method="post">
+            <label for="SourceCode">Source Code </label>
+            <input type="text" id="SourceCode" name="SourceCode" placeholder="RT" />
+            <br />
+            <br />
+            <label for="applicationNumber">Application Number</label>
+            <input type="text" id="applicationNumber" name="applicationNumber" placeholder="12345" />
+            <br />
+            <br /> 
+            <label for="sourceBatchID">Source BatchID</label>
+            <input type="text" id="sourceBatchID" name="sourceBatchID" placeholder="01-3-ABCDEF" />
+            <br />
+            <br />
+            <label for="pageCount">Page Count</label>
+            <input type="text" id="pageCount" name="pageCount" placeholder="2" />
+            <br />
+            <br />
+            <label for="ssn">Ssn </label>
+            <input type="text" id="ssn" name="ssn" placeholder="" />
+            <br />
+            <br />
+            <label for="contractType">Contract Type</label>
+            <input type="text" id="contractType" name="contractType" placeholder="USRETAIL" />
+            <br />
+            <br />
+            <input type="submit" />
+        </form>
+    </div>
+</div>  

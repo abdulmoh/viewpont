@@ -1,0 +1,9 @@
+﻿
+<h3>Response</h3>
+@if (ViewData["result"] != null || !string.IsNullOrWhiteSpace((string)ViewData["result"]))
+{
+    <p>
+        <strong>@ViewData["result"]</strong>
+    </p>
+}
+
